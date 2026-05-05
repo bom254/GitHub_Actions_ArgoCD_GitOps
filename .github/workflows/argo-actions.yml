@@ -46,7 +46,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkoutv@3
+        uses: actions/checkout@v3
         with:
           token: ${{secrets.PERSONAL_ACCESS_TOKEN }}
           fetch-depth: 0 # get all history of all branches and tags
