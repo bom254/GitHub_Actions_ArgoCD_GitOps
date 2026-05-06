@@ -7,13 +7,14 @@ spec:
   selector:
     matchLabels:
       app: node-app
-  templete:
+  template:
     metadata:
       labels:
         app: node-app
     spec:
       containers:
-        - name: node-app
-          image: b00mgr3rt/my-app:latest
-          ports:
-            - containerPort: 3000
+      - name: node-app
+        image: b00mgr3rt/my-app:latest
+        ports:
+        - containerPort: 3000
+
